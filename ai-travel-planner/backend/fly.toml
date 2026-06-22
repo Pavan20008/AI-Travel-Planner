@@ -1,0 +1,13 @@
+app = "ai-travel-backend"
+primary_region = "iad"
+
+[build]
+  image = ""
+
+[[services]]
+  internal_port = 5000
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
